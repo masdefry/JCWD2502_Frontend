@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+
+.box01{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.box02{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    position: sticky;
+    top: 10px;
+}
