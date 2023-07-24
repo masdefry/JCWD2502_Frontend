@@ -1,0 +1,28 @@
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    /* margin-top: 10px;
+    margin-left: 100px; */
+    margin: 10px 100px;
+    border: 3px solid black;
+    padding-left: 100px;
+}
+
+a{
+    background-color: yellow;
+}
+
+a:hover{
+    background-color: red;
+}
+
+a:visited{
+    color: black;
+}
