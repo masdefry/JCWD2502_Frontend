@@ -1,0 +1,45 @@
+.wrapper01{
+    display: grid;
+    background-color: grey;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.wrapper01 div{
+    background-color: blueviolet;
+}
+
+.wrapper01 div:nth-child(even){
+    background-color: yellow;
+}
+
+/* Wrapper02 */
+.wrapper02{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: red;
+}
+
+.wrapper02 div{
+    background-color: green;
+}
+
+.wrapper02 div:nth-child(even){
+    background-color: goldenrod;
+}
+
+.wrapper02 .boxxx1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.wrapper02 .boxxx2{
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+
+.wrapper02 .boxxx6{
+    grid-column: 4/7;
+}
