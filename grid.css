@@ -43,3 +43,32 @@
 .wrapper02 .boxxx6{
     grid-column: 4/7;
 }
+
+.wrapper03{
+    margin-top: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.wrapper03 div{
+    background-color: brown;
+}
+
+.wrapper03 div:nth-child(even){
+    background-color: blue;
+}
+
+.boxxx01{
+    grid-column: 1/4;
+}
+
+.boxxx02{
+    grid-column: 4/10;
+}
+
+.boxxx03{
+    grid-column: 1/5;
+    grid-row: 2/4;
+}
