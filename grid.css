@@ -72,3 +72,40 @@
     grid-column: 1/5;
     grid-row: 2/4;
 }
+
+
+
+/* Mobile */
+@media only screen and (min-width: 0px) {
+    .productimage{
+        display: grid;
+        
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .mainimage{
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productimage div{
+        background-color: grey;
+    }
+}
+
+/* Tablet & Desktop */
+@media only screen and (min-width: 468px) {
+    .productimage{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .mainimage{
+        grid-row: 1/4;
+    }
+}
