@@ -1,1 +1,0 @@
-Hello, Calon Frontend Developer!
