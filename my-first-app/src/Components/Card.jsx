@@ -1,4 +1,4 @@
-export default function Card(){
+export default function Card(props){
     return(
         <div className="card">
             <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -6,13 +6,13 @@ export default function Card(){
             </div>
             <div>
                 <h1>
-                    Nike Tiempo
+                    {props.product.name}
                 </h1>
                 <h3 style={{marginTop: '-20px'}}>
-                    Rp. 1000.000
+                    Rp. {props.product.price}
                 </h3>
                 <h3 style={{marginTop: '-20px'}}>
-                    20 Stocks Available
+                    {props.product.stock} Stocks Available
                 </h3>
             </div>
             <div>
