@@ -8,9 +8,6 @@ import {Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <>
-      <h1>
-        Navbar
-      </h1>
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/profile' element={<Profile />} />
