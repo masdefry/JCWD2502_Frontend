@@ -24,6 +24,9 @@ class ListProduct extends React.Component{
 
     // ComponentDidUpdate: Proses ketika component di render ulang tiap kali terjadi perubahan
     //                     value pada state
+    componentDidUpdate(){
+        console.log('ComponentDidUpdate')
+    }
     // ComponentWillUnmount: Proses ketika component akan dihapus (akan terjadi perpindahan page)
     // componentWillUnmount(){
     //     alert('Are you sure want to exit?')
