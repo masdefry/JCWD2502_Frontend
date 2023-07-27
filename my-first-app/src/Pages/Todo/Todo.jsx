@@ -21,6 +21,12 @@ export default function Todo(){
         setTodos(currentTodos)
     }
 
+    const onDelete = (_idx) => {
+        const currentTodos = [...todos]
+        currentTodos.splice(_idx, 1)
+        setTodos(currentTodos)
+    }
+
     return(
         <div>
             {console.log(todos)}
@@ -33,6 +39,11 @@ export default function Todo(){
                             </span>
                             <span>
                                 {value[1]}
+                            </span>
+                            <span>
+                                <button onClick={() => onDelete(index)}>
+                                    Delete
+                                </button>
                             </span>
                         </div>
                     )
