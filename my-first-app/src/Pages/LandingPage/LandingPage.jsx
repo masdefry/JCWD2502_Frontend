@@ -19,10 +19,12 @@ export default function LandingPage(){
             {
                 products.map((value, index) => {
                     return(
-                        <Card product={value} />
+                        <Card product={value} handleClass='bebas' />
                     )
                 })
             }
+
+<Card product={{ id: 3, name: 'Specs', price: 1000000, stock: 120 }} handleClass='bebas1' />
 
             <Link to='/profile'>
                 <span style={{backgroundColor: 'red'}}>
