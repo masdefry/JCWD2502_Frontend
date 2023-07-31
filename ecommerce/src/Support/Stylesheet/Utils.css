@@ -1,0 +1,23 @@
+:root{
+    --primary: #322653;
+    --secondary: #8062D6;
+    --third: #9288F8;
+    --dark: #2B2730;
+    --light: ;
+}
+
+.ecommerce-fc-primary{
+    color: var(--primary);
+}
+
+.ecommerce-fc-secondary{
+    color: var(--secondary);
+}
+
+.ecommerce-bg-primary{
+    background-color: var(--primary);
+}
+
+.ecommerce-bg-secondary{
+    background-color: var(--secondary);
+}
