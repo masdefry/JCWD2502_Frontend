@@ -53,10 +53,12 @@ export default function FetchPage(){
 
     const [dataUsers, setDataUsers] = useState([])
     const [idToEdit, setIdToEdit] = useState(0)
+    const [usernameToEdit, setUsernameToEdit] = useState('')
 
     const _inputUsername = useRef()
     const _inputEmail = useRef()
     const _inputPassword = useRef()
+    const _inputEditUsername = useRef()
 
     const fetchData = async() => {
         try {
@@ -88,6 +90,11 @@ export default function FetchPage(){
         }
     }
 
+    const onEdit = (_id, _username) => {
+        setIdToEdit(_id)
+        setUsernameToEdit(_username)
+    }
+
     useEffect(() => {
         fetchData()
     }, [])
@@ -104,14 +111,14 @@ export default function FetchPage(){
                             <div className="py-3 px-3">
                                 {
                                     idToEdit === value.id?
-                                        <input type="text" value={value.username} className="border" />
+                                        <input type="text" ref={_inputEditUsername} value={usernameToEdit} onChange={() => setUsernameToEdit(_inputEditUsername.current.value)} className="border" />
                                     :
                                         <span key={value.id}>
                                             {value.username}
                                         </span>
                                 }
                                 <span>
-                                    <button onClick={() => setIdToEdit(value.id)} className="bg-blue-300 mx-3">
+                                    <button onClick={() => onEdit(value.id, value.username)} className="bg-blue-300 mx-3">
                                         Edit
                                     </button>
                                 </span>
