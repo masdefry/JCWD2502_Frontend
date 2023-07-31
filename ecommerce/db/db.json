@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ryandefryan",
+      "email": "ryan@gmail.com",
+      "password": "Abc123"
+    },
+    {
+      "id": 2,
+      "username": "bayu",
+      "email": "bayu@gmail.com",
+      "password": "Bca123"
+    },
+    {
+      "id": 3,
+      "username": "albert",
+      "email": "albert@gmail.com",
+      "password": "Abc123"
+    },
+    {
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "Abc12345",
+      "id": 4
+    },
+    {
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "Abc12345",
+      "id": 5
+    }
+  ]
+}
