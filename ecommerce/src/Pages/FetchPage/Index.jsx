@@ -48,6 +48,7 @@
 
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function FetchPage(){
 
@@ -95,12 +96,24 @@ export default function FetchPage(){
         setUsernameToEdit(_username)
     }
 
+    const onSave = async(_id, _username) => {
+        try {
+            const response = await axios.put(`http://localhost:5000/users/${_id}`, {username: _username})
+            onEdit(0, '')
+            fetchData()
+            toast.success('Edit Success!')
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     useEffect(() => {
         fetchData()
     }, [])
 
     return(
         <>
+            <Toaster />
             <h1>
                 Fetch Data Using Axios
             </h1>
@@ -111,17 +124,27 @@ export default function FetchPage(){
                             <div className="py-3 px-3">
                                 {
                                     idToEdit === value.id?
-                                        <input type="text" ref={_inputEditUsername} value={usernameToEdit} onChange={() => setUsernameToEdit(_inputEditUsername.current.value)} className="border" />
+                                        <>
+                                            <input type="text" ref={_inputEditUsername} value={usernameToEdit} 
+                                            onChange={() => setUsernameToEdit(_inputEditUsername.current.value)} className="border" />
+                                            <span>
+                                                <button onClick={() => onSave(value.id, _inputEditUsername.current.value)} className="bg-blue-300 mx-3">
+                                                    Save
+                                                </button>
+                                            </span>
+                                        </>
                                     :
-                                        <span key={value.id}>
-                                            {value.username}
-                                        </span>
+                                        <>
+                                            <span key={value.id}>
+                                                {value.username}
+                                            </span> 
+                                            <span>
+                                                <button onClick={() => onEdit(value.id, value.username)} className="bg-blue-300 mx-3">
+                                                    Edit
+                                                </button>
+                                            </span>
+                                        </>
                                 }
-                                <span>
-                                    <button onClick={() => onEdit(value.id, value.username)} className="bg-blue-300 mx-3">
-                                        Edit
-                                    </button>
-                                </span>
                             </div>
                         </>
                     )
