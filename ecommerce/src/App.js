@@ -5,6 +5,7 @@ import './Support/Stylesheet/Utils.css';
 // Components
 import Navbar from './Components/Navbar';
 import Register from './Pages/Register/Index';
+import FetchPage from './Pages/FetchPage/Index';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         - Justify Content: Start, Center, End
         - Align Items: Start, Center, End
       */}
-      <div className='flex justify-between px-10'>
+      {/* <div className='flex justify-between px-10'>
         <div className='flex-1 border'>Logo</div>
         <div className='flex-1 flex justify-center gap-3 border'>
           <div>Menu1</div>
@@ -25,7 +26,8 @@ function App() {
         <div>IconRight1</div>
         <div>IconRight2</div>
         </div>
-      </div>
+      </div> */}
+      <FetchPage />
     </>
   );
 }
