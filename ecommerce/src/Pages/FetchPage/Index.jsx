@@ -52,6 +52,7 @@ import { useEffect, useRef, useState } from "react";
 export default function FetchPage(){
 
     const [dataUsers, setDataUsers] = useState([])
+    const [idToEdit, setIdToEdit] = useState(0)
 
     const _inputUsername = useRef()
     const _inputEmail = useRef()
@@ -79,8 +80,9 @@ export default function FetchPage(){
 
             // 2. Validasi setiap inputan
             // 3. Simpan data ke db.json
-            const response = await axios.post(`http://localhost:5000/user`, dataToSend)
+            const response = await axios.post(`http://localhost:5000/users`, dataToSend)
             alert('Register Success')
+            fetchData()
         } catch (error) {
             alert('Register Failed')
         }
@@ -98,9 +100,23 @@ export default function FetchPage(){
             {
                 dataUsers.map((value, index) => {
                     return(
-                        <h1 key={value.id}>
-                            {value.username}
-                        </h1>
+                        <>
+                            <div className="py-3 px-3">
+                                {
+                                    idToEdit === value.id?
+                                        <input type="text" value={value.username} className="border" />
+                                    :
+                                        <span key={value.id}>
+                                            {value.username}
+                                        </span>
+                                }
+                                <span>
+                                    <button onClick={() => setIdToEdit(value.id)} className="bg-blue-300 mx-3">
+                                        Edit
+                                    </button>
+                                </span>
+                            </div>
+                        </>
                     )
                 })
             }

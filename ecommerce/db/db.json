@@ -29,6 +29,18 @@
       "email": "abc@gmail.com",
       "password": "Abc12345",
       "id": 5
+    },
+    {
+      "username": "anggoro",
+      "email": "anggoro@gmail.com",
+      "password": "Abc12345",
+      "id": 6
+    },
+    {
+      "username": "fernando",
+      "email": "fernando@gmail.com",
+      "password": "Abc12345",
+      "id": 7
     }
   ]
 }
