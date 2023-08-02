@@ -5,6 +5,12 @@
       "email": "defryan@gmail.com",
       "password": "Abc12345",
       "id": 1
+    },
+    {
+      "fullname": "Ryan",
+      "email": "ryan01@gmail.com",
+      "password": "Bca12",
+      "id": 2
     }
   ]
 }

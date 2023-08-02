@@ -59,6 +59,9 @@ export default function FormRegister(){
               Password
             </h1>
             <input type='password' ref={inputPassword} placeholder='Password' className='border border-gray-600 w-full mt-3 px-3 py-3 outline-none' />
+            <div className='text-red-600'>
+              Password Have Minimum 6 Characters
+            </div>
           </div>
           <div className='px-20 py-3'>
             <Button handleFunction={onRegister} handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
