@@ -1,44 +1,10 @@
 {
   "users": [
     {
-      "username": "ryandefryan",
+      "fullname": "M Defryan",
+      "email": "defryan@gmail.com",
+      "password": "Abc12345",
       "id": 1
-    },
-    {
-      "id": 2,
-      "username": "bayu",
-      "email": "bayu@gmail.com",
-      "password": "Bca123"
-    },
-    {
-      "id": 3,
-      "username": "albert",
-      "email": "albert@gmail.com",
-      "password": "Abc123"
-    },
-    {
-      "username": "abc",
-      "email": "abc@gmail.com",
-      "password": "Abc12345",
-      "id": 4
-    },
-    {
-      "username": "abc",
-      "email": "abc@gmail.com",
-      "password": "Abc12345",
-      "id": 5
-    },
-    {
-      "username": "anggoro",
-      "email": "anggoro@gmail.com",
-      "password": "Abc12345",
-      "id": 6
-    },
-    {
-      "username": "fernando",
-      "email": "fernando@gmail.com",
-      "password": "Abc12345",
-      "id": 7
     }
   ]
 }

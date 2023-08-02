@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function FormLogin(){
     return(
         <div>
@@ -8,7 +10,7 @@ export default function FormLogin(){
           </div>
           <div className='px-20 py-3'>
             <h1 className='text-xl font-bold'> 
-              Username or Email
+             Email
             </h1>
             <input type='text' placeholder='Email' className='border border-gray-600 w-full mt-3 px-3 py-3 outline-none' />
           </div>
@@ -16,7 +18,12 @@ export default function FormLogin(){
             <h1 className='text-xl font-bold'> 
               Password
             </h1>
-            <input type='text' placeholder='Email' className='border border-gray-600 w-full mt-3 px-3 py-3 outline-none' />
+            <input type='password' placeholder='Password' className='border border-gray-600 w-full mt-3 px-3 py-3 outline-none' />
+          </div>
+          <div className='px-20 py-3'>
+            <Button handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
+              Login
+            </Button>
           </div>
         </div>
     )
