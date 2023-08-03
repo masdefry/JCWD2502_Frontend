@@ -1,7 +1,30 @@
 import { Accordion } from 'flowbite-react';
 import Logo from './../../logo.svg';
+import Card from '../../Components/Card';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Home(){
+
+    const [products, setProducts] = useState(null)
+
+    const onFetchData = async() => {
+        try {
+            const {data} = await axios.get('http://localhost:5000/products')
+            setProducts(data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        onFetchData()
+    }, [])
+
+    if(!products){
+        return <div>Loading...</div>
+    }
+
     return(
         <div className='pt-0 mt-0'>
             {/* 
@@ -64,114 +87,13 @@ export default function Home(){
                         </div>
                     </div>
                     <div className='grid grid-cols-4 py-2'>
-                        <div className='py-3'>
-                            <div>
-                                <img
-                                    src='https://cdn.shopify.com/s/files/1/0607/2841/0296/files/ee269d434259d07456f83fa8d1fb6ee7_882b76a1-2d4a-45c1-bdc5-d1d53aca45ce_360x.jpg?v=1688640658'
-                                />
-                            </div>
-                            <div className='px-6 py-3 font-bold'>
-                                Erigo Denim Pants Tea
-                            </div>
-                            <div className='px-6 flex gap-3'>
-                                <del>
-                                    Rp. 100.000
-                                </del>
-                                <span className='text-red-600 font-bold'>
-                                    Rp. 85.000
-                                </span>
-                            </div>
-                        </div>
-                        <div className='py-3'>
-                            <div>
-                                <img
-                                    src='https://cdn.shopify.com/s/files/1/0607/2841/0296/files/ee269d434259d07456f83fa8d1fb6ee7_882b76a1-2d4a-45c1-bdc5-d1d53aca45ce_360x.jpg?v=1688640658'
-                                />
-                            </div>
-                            <div className='px-6 py-3 font-bold'>
-                                Erigo Denim Pants Tea
-                            </div>
-                            <div className='px-6 flex gap-3'>
-                                <del>
-                                    Rp. 100.000
-                                </del>
-                                <span className='text-red-600 font-bold'>
-                                    Rp. 85.000
-                                </span>
-                            </div>
-                        </div>
-                        <div className='py-3'>
-                            <div>
-                                <img
-                                    src='https://cdn.shopify.com/s/files/1/0607/2841/0296/files/ee269d434259d07456f83fa8d1fb6ee7_882b76a1-2d4a-45c1-bdc5-d1d53aca45ce_360x.jpg?v=1688640658'
-                                />
-                            </div>
-                            <div className='px-6 py-3 font-bold'>
-                                Erigo Denim Pants Tea
-                            </div>
-                            <div className='px-6 flex gap-3'>
-                                <del>
-                                    Rp. 100.000
-                                </del>
-                                <span className='text-red-600 font-bold'>
-                                    Rp. 85.000
-                                </span>
-                            </div>
-                        </div>
-                        <div className='py-3'>
-                            <div>
-                                <img
-                                    src='https://cdn.shopify.com/s/files/1/0607/2841/0296/files/ee269d434259d07456f83fa8d1fb6ee7_882b76a1-2d4a-45c1-bdc5-d1d53aca45ce_360x.jpg?v=1688640658'
-                                />
-                            </div>
-                            <div className='px-6 py-3 font-bold'>
-                                Erigo Denim Pants Tea
-                            </div>
-                            <div className='px-6 flex gap-3'>
-                                <del>
-                                    Rp. 100.000
-                                </del>
-                                <span className='text-red-600 font-bold'>
-                                    Rp. 85.000
-                                </span>
-                            </div>
-                        </div>
-                        <div className='py-3'>
-                            <div>
-                                <img
-                                    src='https://cdn.shopify.com/s/files/1/0607/2841/0296/files/ee269d434259d07456f83fa8d1fb6ee7_882b76a1-2d4a-45c1-bdc5-d1d53aca45ce_360x.jpg?v=1688640658'
-                                />
-                            </div>
-                            <div className='px-6 py-3 font-bold'>
-                                Erigo Denim Pants Tea
-                            </div>
-                            <div className='px-6 flex gap-3'>
-                                <del>
-                                    Rp. 100.000
-                                </del>
-                                <span className='text-red-600 font-bold'>
-                                    Rp. 85.000
-                                </span>
-                            </div>
-                        </div>
-                        <div className='py-3'>
-                            <div>
-                                <img
-                                    src='https://cdn.shopify.com/s/files/1/0607/2841/0296/files/ee269d434259d07456f83fa8d1fb6ee7_882b76a1-2d4a-45c1-bdc5-d1d53aca45ce_360x.jpg?v=1688640658'
-                                />
-                            </div>
-                            <div className='px-6 py-3 font-bold'>
-                                Erigo Denim Pants Tea
-                            </div>
-                            <div className='px-6 flex gap-3'>
-                                <del>
-                                    Rp. 100.000
-                                </del>
-                                <span className='text-red-600 font-bold'>
-                                    Rp. 85.000
-                                </span>
-                            </div>
-                        </div>
+                        {
+                            products.map((value, index) => {
+                                return(
+                                    <Card item={value} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
