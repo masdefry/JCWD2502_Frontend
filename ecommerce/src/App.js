@@ -6,6 +6,7 @@ import './Support/Stylesheet/Utils.css';
 import Navbar from './Components/Navbar';
 import Register from './Pages/Register/Index';
 import FetchPage from './Pages/FetchPage/Index';
+import Home from './Pages/Home/Index';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         1. Make sure email belum pernah terdaftar
         2. Make sure minimum length password 6 character
       */}
+      <Home />
     </>
   );
 }
