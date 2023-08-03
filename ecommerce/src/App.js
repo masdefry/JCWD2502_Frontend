@@ -8,17 +8,40 @@ import Register from './Pages/Register/Index';
 import FetchPage from './Pages/FetchPage/Index';
 import Home from './Pages/Home/Index';
 
+import {Routes, Route} from 'react-router-dom';
+import axios from 'axios';
+import toast from 'react-hot-toast';
+
+import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
+
 function App() {
+  const [email, setEmail] = useState('')
+  const navigate = useNavigate()
+
+  const onLogin = async(inputEmail, inputPassword) => {
+    try {
+      const response = await axios.get(`http://localhost:5000/users?email=${inputEmail.current.value}&password=${inputPassword.current.value}`)
+      if(!response.data.length) return toast.error('Account Not Found')
+      
+      toast.success('Login Success!')
+      
+      setTimeout(() => {
+        setEmail(response.data[0].email)
+        navigate('/')
+      }, 3000)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <>
-      <Navbar />
-      {/* <Register /> */}
-      {/* 
-        Register: 
-        1. Make sure email belum pernah terdaftar
-        2. Make sure minimum length password 6 character
-      */}
-      <Home />
+      <Navbar userEmail={email} />
+      <Routes>
+        <Route path='/' element={<Home /> } />
+        <Route path='/register' element={<Register handleLoginFromApp={onLogin} />} />
+      </Routes>
     </>
   );
 }

@@ -3,21 +3,12 @@ import Button from "./Button";
 import { useRef } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
-export default function FormLogin(){
+import { useNavigate } from "react-router-dom";
+
+export default function FormLogin(props){
   const inputEmail = useRef()
   const inputPassword = useRef()
-
-  const onLogin = async() => {
-    try {
-      const response = await axios.get(`http://localhost:5000/users?email=${inputEmail.current.value}&password=${inputPassword.current.value}`)
-      
-      if(!response.data.length) return toast.error('Account Not Found')
-
-      toast.success('Login Success!')
-    } catch (error) {
-      
-    }
-  }
+  const navigate = useNavigate()
 
     return(
         <div>
@@ -40,7 +31,7 @@ export default function FormLogin(){
             <input type='password' ref={inputPassword} placeholder='Password' className='border border-gray-600 w-full mt-3 px-3 py-3 outline-none' />
           </div>
           <div className='px-20 py-3'>
-            <Button handleFunction={onLogin} handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
+            <Button handleFunction={() => props.handleLoginFromPage(inputEmail, inputPassword)} handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
               Login
             </Button>
           </div>

@@ -14,217 +14,222 @@
     }
   ],
 
-  "products": [
+  "products":[
     {
-      "productName": "Erigo T-Shirt Museum Patah Hati Misery Loves Company Black",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669",
-        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 125.000",
-      "category": 1,
-      "id": 1
+        "name":"Erigo T-Shirt Oversize Fresne Andora",
+        "images":["https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
+    "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"],
+        "price": 300000,
+        "size": ["S","M","L","XL"],
+        "stocks":[10,10,15,20],
+        "type":1,
+        "id":1
     },
     {
-      "productName": "Erigo T-Shirt The Magic Trio Maroon",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/5682478ffc30c1905ae82532a6f7a3a0.jpg?v=1647952542",
-        "https://erigostore.co.id/cdn/shop/products/c823da72b415c71dcd3ba3456ba77ad6.jpg?v=1647952542"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 2
+        "name":"Erigo T-Shirt Basic Black White Unisex",
+        "images":["https://erigostore.co.id/cdn/shop/files/844209629fe3bdab9aea7a3f2bcd9731.jpg?v=1684515138",
+    "https://erigostore.co.id/cdn/shop/files/9d43400af60e0df2f6b481e87b489b64.jpg?v=1684515141"],
+        "price": 250000,
+        "size": ["S","M"],
+        "stocks":[10,10],
+        "type":1,
+        "id":2
     },
     {
-      "productName": "Erigo T-Shirt The Magic Trio Maroon",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/5682478ffc30c1905ae82532a6f7a3a0.jpg?v=1647952542",
-        "https://erigostore.co.id/cdn/shop/products/c823da72b415c71dcd3ba3456ba77ad6.jpg?v=1647952542"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 3
+        "name":"Erigo T-Shirt Wicked Cream",
+        "images":["https://erigostore.co.id/cdn/shop/products/T-SHIRTWICKEDCREAM.jpg?v=1677835002",
+    "https://erigostore.co.id/cdn/shop/products/id-11134201-23020-c8750tvwjunv21.jpg?v=1677835002"],
+        "price": 250000,
+        "size": ["S","M","L"],
+        "stocks":[10,10,15],
+        "type":1,
+        "id":3
     },
     {
-      "productName": "Erigo T-Shirt Chasing Sunset Black",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/TSHIRT-CHASING-SUNSET-BLACK_3.jpg?v=1660119735",
-        "https://erigostore.co.id/cdn/shop/products/T-SHIRT-CHASING-SUNSET-BLACK-2-819x1024.jpg?v=1660119773"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 4
+        "name":"Erigo T-Shirt Oversize Glenn Fredly - Retrowave Black",
+        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qukx-li2k1an0em55f3.jpg?v=1686910993",
+    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-li2k1aqm9bi76f.jpg?v=1686910996"],
+        "price": 180000,
+        "size": ["M","L","XL"],
+        "stocks":[10,10,15],
+        "type":1,
+        "id":4
     },
     {
-      "productName": "Erigo T-Shirt Sunset In Sobe Black",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/58fec13fec1b4fd2ca87364cfc33dffa.jpg?v=1647952498",
-        "https://erigostore.co.id/cdn/shop/products/149b836491a204548a1d6e75c35a2b71.jpg?v=1647952498"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 5
+        "name":"Erigo T-Shirt Museum Patah Hati Misery Loves Company Black",
+        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669",
+    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-libac7gwa3u5f8_ac616eaf-7b58-407c-8c6f-5bf11ae8fbe4.jpg?v=1687491671"],
+        "price": 125000,
+        "size": ["S","M","L","XL"],
+        "stocks":[10,10,15,20],
+        "type":1,
+        "id":5
     },
     {
-      "productName": "Erigo T-Shirt Soda & Chill Black",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/467fbece40f11c03b3a4dda61407c54d.jpg?v=1647952516",
-        "https://erigostore.co.id/cdn/shop/products/5787cb71949db49964cc948d7117d000.jpg?v=1647952516"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 6
+        "name":"Erigo Jogger Pants Morton Army",
+        "images":["https://erigostore.co.id/cdn/shop/files/ErigoJoggerPantsMortonArmy1.jpg?v=1683089344",
+    "https://erigostore.co.id/cdn/shop/products/222f87bdab0ae63cc7b8cc1384fe2b23.jpg?v=1683089344"],
+        "price": 450000,
+        "size": [28,30,32,34,36,38,40],
+        "stocks":[10,10,15,20,15,15,15],
+        "type":3,
+        "id":6
     },
     {
-      "productName": "Disney X Erigo T-Shirt Colorful Mickey Navy",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/9663ecf4c25e28c128665481a8f7bbae.jpg?v=1647832628",
-        "https://erigostore.co.id/cdn/shop/products/116a623776158c1581005f54a3adb877.jpg?v=1647832628"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 350.000",
-      "category": 1,
-      "id": 7
+        "name":"Erigo Short Pants Hootf Platinum Grey",
+        "images":["https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-1.jpg?v=1662093047",
+    "https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-2.jpg?v=1662093047"],
+        "price": 400000,
+        "size": [28,30,32,34,36,38,40],
+        "stocks":[10,10,15,20,15,15,15],
+        "type":3,
+        "id":7
     },
     {
-      "productName": "Erigo T-Shirt Greatest Shooter Maroon",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/ddbc81e1a841e79d2b41bc0436591916.jpg?v=1648541936",
-        "https://erigostore.co.id/cdn/shop/products/b5eba6e56a2287771af9d8868ebcf5df.jpg?v=1648541936"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 350.000",
-      "category": 1,
-      "id": 8
+        "name":"Erigo Chino Pants Alexa Navy",
+        "images":["https://erigostore.co.id/cdn/shop/products/c256b0f95833056fb8557c5deb8a8362.jpg?v=1647942335",
+    "https://erigostore.co.id/cdn/shop/products/b4360a97084ce0b12b50005703f684a8.jpg?v=1647942335"],
+        "price": 500000,
+        "size": [28,30,32,36],
+        "stocks":[10,10,15,20],
+        "type":3,
+        "id":8
     },
     {
-      "productName": "Erigo T-Shirt Chest Cart Navy",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/db54a46d60b75836d7badf1b61bc9259.jpg?v=1648467810",
-        "https://erigostore.co.id/cdn/shop/products/1869d442a93299e8cdeb1fe201865299.jpg?v=1648467810"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 9
+        "name":"Erigo Short Pants Noury Navy",
+        "images":["https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-1.jpg?v=1662093148",
+    "https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-6.jpg?v=1680582876"],
+        "price": 400000,
+        "size": [28,30],
+        "stocks":[10,10],
+        "type":3,
+        "id":9
     },
     {
-      "productName": "Erigo T-Shirt True Warriors Navy",
-      "image": [
-        "https://erigostore.co.id/cdn/shop/products/d9ac39f279031caffacf18da15ba8eba_a18e485f-fc57-45a0-ad15-713d6d0677fe.jpg?v=1684754280",
-        "https://erigostore.co.id/cdn/shop/products/dc247fb0626c3d1bce791a4ea46ce8c9.jpg?v=1648702836"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L"
-      ],
-      "stocks": [
-        4,
-        5,
-        7
-      ],
-      "price": "Rp. 250.000",
-      "category": 1,
-      "id": 10
+        "name":"Erigo Chino Pants Sirius Black",
+        "images":["https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-1.jpg?v=1680575486",
+    "https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-3.jpg?v=1680575486"],
+        "price": 500000,
+        "size": [30,32,36],
+        "stocks":[10,15,20],
+        "type":3,
+        "id":10
+    },
+    {
+        "name":"Erigo T-Shirt Oversize Fresne Andora",
+        "images":["https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
+    "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"],
+        "price": 300000,
+        "size": ["S","M","L","XL"],
+        "stocks":[10,10,15,20],
+        "type":1,
+        "id":1
+    },
+    {
+        "name":"Erigo T-Shirt Basic Black White Unisex",
+        "images":["https://erigostore.co.id/cdn/shop/files/844209629fe3bdab9aea7a3f2bcd9731.jpg?v=1684515138",
+    "https://erigostore.co.id/cdn/shop/files/9d43400af60e0df2f6b481e87b489b64.jpg?v=1684515141"],
+        "price": 250000,
+        "size": ["S","M"],
+        "stocks":[10,10],
+        "type":1,
+        "id":2
+    },
+    {
+        "name":"Erigo T-Shirt Wicked Cream",
+        "images":["https://erigostore.co.id/cdn/shop/products/T-SHIRTWICKEDCREAM.jpg?v=1677835002",
+    "https://erigostore.co.id/cdn/shop/products/id-11134201-23020-c8750tvwjunv21.jpg?v=1677835002"],
+        "price": 250000,
+        "size": ["S","M","L"],
+        "stocks":[10,10,15],
+        "type":1,
+        "id":3
+    },
+    {
+        "name":"Erigo T-Shirt Oversize Glenn Fredly - Retrowave Black",
+        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qukx-li2k1an0em55f3.jpg?v=1686910993",
+    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-li2k1aqm9bi76f.jpg?v=1686910996"],
+        "price": 180000,
+        "size": ["M","L","XL"],
+        "stocks":[10,10,15],
+        "type":1,
+        "id":4
+    },
+    {
+        "name":"Erigo T-Shirt Museum Patah Hati Misery Loves Company Black",
+        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669",
+    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-libac7gwa3u5f8_ac616eaf-7b58-407c-8c6f-5bf11ae8fbe4.jpg?v=1687491671"],
+        "price": 125000,
+        "size": ["S","M","L","XL"],
+        "stocks":[10,10,15,20],
+        "type":1,
+        "id":5
+    },
+    {
+        "name":"Erigo Jogger Pants Morton Army",
+        "images":["https://erigostore.co.id/cdn/shop/files/ErigoJoggerPantsMortonArmy1.jpg?v=1683089344",
+    "https://erigostore.co.id/cdn/shop/products/222f87bdab0ae63cc7b8cc1384fe2b23.jpg?v=1683089344"],
+        "price": 450000,
+        "size": [28,30,32,34,36,38,40],
+        "stocks":[10,10,15,20,15,15,15],
+        "type":3,
+        "id":6
+    },
+    {
+        "name":"Erigo Short Pants Hootf Platinum Grey",
+        "images":["https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-1.jpg?v=1662093047",
+    "https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-2.jpg?v=1662093047"],
+        "price": 400000,
+        "size": [28,30,32,34,36,38,40],
+        "stocks":[10,10,15,20,15,15,15],
+        "type":3,
+        "id":7
+    },
+    {
+        "name":"Erigo Chino Pants Alexa Navy",
+        "images":["https://erigostore.co.id/cdn/shop/products/c256b0f95833056fb8557c5deb8a8362.jpg?v=1647942335",
+    "https://erigostore.co.id/cdn/shop/products/b4360a97084ce0b12b50005703f684a8.jpg?v=1647942335"],
+        "price": 500000,
+        "size": [28,30,32,36],
+        "stocks":[10,10,15,20],
+        "type":3,
+        "id":8
+    },
+    {
+        "name":"Erigo Short Pants Noury Navy",
+        "images":["https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-1.jpg?v=1662093148",
+    "https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-6.jpg?v=1680582876"],
+        "price": 400000,
+        "size": [28,30],
+        "stocks":[10,10],
+        "type":3,
+        "id":9
+    },
+    {
+        "name":"Erigo Chino Pants Sirius Black",
+        "images":["https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-1.jpg?v=1680575486",
+    "https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-3.jpg?v=1680575486"],
+        "price": 500000,
+        "size": [30,32,36],
+        "stocks":[10,15,20],
+        "type":3,
+        "id":10
     }
-  ],
+    
+],
 
-  "category": [
+"type":[
     {
-      "name": "T-Shirt",
-      "id": 1
+        "name":"T-shirt",
+        "id":1
     },
     {
-      "name": "Shirt",
-      "id": 2
+        "name":"Shirt",
+        "id":2
+    },
+    {
+        "name":"Pants",
+        "id":3
     }
-  ]
+]
 }
