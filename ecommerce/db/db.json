@@ -12,5 +12,31 @@
       "password": "Bca12",
       "id": 2
     }
+  ],
+
+  "products": [
+    {
+      "name": "A",
+      "size": ["S", "M", "L"],
+      "stocks": [10, 15, 10],
+      "price": 125000,
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669",
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-libac7gwa3u5f8_ac616eaf-7b58-407c-8c6f-5bf11ae8fbe4.jpg?v=1687491671"
+      ],
+      "category": 1,
+      "id": 1
+    }
+  ],
+
+  "category": [
+    {
+      "name": "T-Shirt",
+      "id": 1
+    },
+    {
+      "name": "Shirt",
+      "id": 2
+    }
   ]
 }

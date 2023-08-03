@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Register />
+      {/* <Register /> */}
       {/* 
         Register: 
         1. Make sure email belum pernah terdaftar
