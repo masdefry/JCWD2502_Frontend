@@ -3,18 +3,37 @@ import Logo from './../../logo.svg';
 import Card from '../../Components/Card';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Checkbox from '../../Components/Checkbox';
 
 export default function Home(){
-
+    const [backupProducts, setBackupProducts] = useState(null)
     const [products, setProducts] = useState(null)
+    const [type, setType] = useState(null)
 
     const onFetchData = async() => {
         try {
-            const {data} = await axios.get('http://localhost:5000/products')
-            setProducts(data)
+            const products = await axios.get('http://localhost:5000/products')
+            const type = await axios.get('http://localhost:5000/type')
+            console.log(products.data)
+            console.log(type.data)
+
+            setBackupProducts(products.data)
+            setProducts(products.data)
+            setType(type.data)
         } catch (error) {
             console.log(error)
         }
+    }
+
+    const handleCheckbox = (_typeId) => {
+        
+        const tempProducts = [...products]
+
+        const filtered = tempProducts.filter((value) => {
+            return value.typeId === _typeId
+        })
+
+        setProducts(filtered)
     }
 
     useEffect(() => {
@@ -49,18 +68,21 @@ export default function Home(){
                             COLLECTION
                         </div>
                         <div className='pt-3 flex flex-col gap-3'>
-                            <div className="flex items-center gap-3">
-                                <input type="checkbox" className="bg-white-300" />
-                                T-Shirt                    
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <input type="checkbox" className="bg-white-300" />
-                                Shirt                    
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <input type="checkbox" className="bg-white-300" />
-                                Pants                    
-                            </div>
+                            {
+                                type.map((value, index) => {
+                                    return(
+                                        <Checkbox 
+                                            typeName={value.name} 
+                                            typeId={
+                                                value.id
+                                            }
+                                            handleFunction={
+                                                handleCheckbox
+                                            }
+                                        />
+                                    )
+                                })
+                            }   
                         </div>
                     </div>
                 </div>
