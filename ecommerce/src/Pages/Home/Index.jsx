@@ -9,6 +9,7 @@ export default function Home(){
     const [backupProducts, setBackupProducts] = useState(null)
     const [products, setProducts] = useState(null)
     const [type, setType] = useState(null)
+    const [selectedType, setSelectedType] = useState([])
 
     const onFetchData = async() => {
         try {
@@ -27,13 +28,21 @@ export default function Home(){
 
     const handleCheckbox = (_typeId) => {
         
-        const tempProducts = [...products]
-
+        const tempSelectedType = [...selectedType] // [1]
+        const tempProducts = [...backupProducts]
+        
+        if(tempSelectedType.includes(_typeId)){
+            tempSelectedType.splice(tempSelectedType.indexOf(_typeId), 1) // []
+        }else{
+            tempSelectedType.push(_typeId)
+        }
+        
         const filtered = tempProducts.filter((value) => {
-            return value.typeId === _typeId
+            return tempSelectedType.includes(value.typeId)
         })
 
-        setProducts(filtered)
+        setSelectedType(tempSelectedType) // setState [1]
+        filtered.length? setProducts(filtered) : setProducts(tempProducts)
     }
 
     useEffect(() => {
