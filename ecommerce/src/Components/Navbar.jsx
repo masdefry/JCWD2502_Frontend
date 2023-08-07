@@ -27,10 +27,11 @@ export default function Navbar(props){
                     props.userEmail?
                         `${props.userEmail}`
                     :
-                        <Link to='/register'>
+                            <Link to='/register'>
                             Signin
                         </Link>
                 }
+                
             </div>
         </div>
     )

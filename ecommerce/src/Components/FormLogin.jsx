@@ -10,6 +10,8 @@ export default function FormLogin(props){
   const inputPassword = useRef()
   const navigate = useNavigate()
 
+  
+
     return(
         <div>
           <Toaster />
@@ -31,9 +33,12 @@ export default function FormLogin(props){
             <input type='password' ref={inputPassword} placeholder='Password' className='border border-gray-600 w-full mt-3 px-3 py-3 outline-none' />
           </div>
           <div className='px-20 py-3'>
-            <Button handleFunction={() => props.handleLoginFromPage(inputEmail, inputPassword)} handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
+            {/* <Button handleFunction={onLogin} handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
               Login
-            </Button>
+            </Button> */}
+            <button onClick={() => props.handleFunctionFromPage(inputEmail, inputPassword)} className='px-10 py-5 hover:bg-cyan-600 font-bold'>
+              Login 
+            </button>
           </div>
         </div>
     )

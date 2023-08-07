@@ -8,16 +8,17 @@ import Register from './Pages/Register/Index';
 import FetchPage from './Pages/FetchPage/Index';
 import Home from './Pages/Home/Index';
 
-import {Routes, Route} from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
 function App() {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState(null)
   const navigate = useNavigate()
+  const {pathname} = useLocation()
+  const array = ['/register', '/login']
 
   const onLogin = async(inputEmail, inputPassword) => {
     try {
@@ -27,8 +28,8 @@ function App() {
       toast.success('Login Success!')
       
       setTimeout(() => {
-        setEmail(response.data[0].email)
         navigate('/')
+        setEmail(response.data[0].email)
       }, 3000)
     } catch (error) {
       console.log(error)
@@ -37,10 +38,15 @@ function App() {
 
   return (
     <>
-      <Navbar userEmail={email} />
+      {
+        array.includes(pathname)?
+          null
+        :
+          <Navbar userEmail={email} />
+      }
       <Routes>
         <Route path='/' element={<Home /> } />
-        <Route path='/register' element={<Register handleLoginFromApp={onLogin} />} />
+        <Route path='/register' element={<Register handleFunctionFromApp={onLogin} />} />
       </Routes>
     </>
   );

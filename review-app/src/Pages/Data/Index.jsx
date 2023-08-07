@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Data(){
     const [data, setData] = useState([])
@@ -15,18 +16,36 @@ export default function Data(){
         }
     }
 
+    // useEffect(() => {
+    //     onFetchData()
+    //     // console.log('UseEffect Running')
+    // }, [])
+
+    // useEffect(() => {
+
+    // }, []) // [State]
+
+    // useEffect(() => {
+    //     return() => {
+
+    //     }
+    // }, [])
+
+    // LifeCycle Method
+    // 1. Render (Return)
+    // 2. ComponentDidMount
     useEffect(() => {
-        onFetchData()
-        // console.log('UseEffect Running')
+        console.log('Component Did Mount Jalan')
+    }, [])
+    // 3. ComponentDidUpdate
+    useEffect(() => {
+
     }, [])
 
-    useEffect(() => {
-
-    }, []) // [State]
-
+    // 4. ComponentWillUnmount
     useEffect(() => {
         return() => {
-
+            alert('Are you sure want to exit?')
         }
     }, [])
 
@@ -38,6 +57,9 @@ export default function Data(){
             <h1>
                 Network Call & CRUD
             </h1>
+            <Link to='/'>
+                Goto Home
+            </Link>
             {
                 data.map((value, index) => {
                     return(
