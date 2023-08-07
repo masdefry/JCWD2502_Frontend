@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Sepatu", 
+            "price": 1000000,
+            "id": 1
+        },
+        {
+            "name": "Kaos", 
+            "price": 300000,
+            "id": 2
+        },
+        {
+            "name": "Celana", 
+            "price": 100000,
+            "id": 3
+        }
+    ]
+}
