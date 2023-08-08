@@ -12,30 +12,21 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 
 import { useNavigate, useLocation, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Counter from './Pages/Counter/Index';
+import { onCheckIsLogin } from './Redux/Features/User/Index';
+import { useDispatch } from 'react-redux';
+
 
 function App() {
-  const [email, setEmail] = useState(null)
   const navigate = useNavigate()
   const {pathname} = useLocation()
   const array = ['/register', '/login']
+  const dispatch = useDispatch()
 
-  const onLogin = async(inputEmail, inputPassword) => {
-    try {
-      const response = await axios.get(`http://localhost:5000/users?email=${inputEmail.current.value}&password=${inputPassword.current.value}`)
-      if(!response.data.length) return toast.error('Account Not Found')
-      
-      toast.success('Login Success!')
-      
-      setTimeout(() => {
-        navigate('/')
-        setEmail(response.data[0].email)
-      }, 3000)
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  useEffect(() => {
+    dispatch(onCheckIsLogin())
+  }, [])
 
   return (
     <>
@@ -43,11 +34,11 @@ function App() {
         array.includes(pathname)?
           null
         :
-          <Navbar userEmail={email} />
+          <Navbar />
       }
       <Routes>
         <Route path='/' element={<Home /> } />
-        <Route path='/register' element={<Register handleFunctionFromApp={onLogin} />} />
+        <Route path='/register' element={<Register />} />
         <Route path='/counter' element={<Counter />} />
         </Routes>
     </>

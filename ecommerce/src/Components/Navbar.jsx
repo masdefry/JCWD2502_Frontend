@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export default function Navbar(props){
+    const {email} = useSelector((state) => state.users)
     return(
         <div className='grid grid-cols-3 justify-between px-32 h-[50px]'>
             <div className='flex items-center'>
@@ -24,8 +26,8 @@ export default function Navbar(props){
             </div>
             <div className='flex justify-end items-center font-bold'>
                 {
-                    props.userEmail?
-                        `${props.userEmail}`
+                    email?
+                        `${email}`
                     :
                             <Link to='/register'>
                             Signin

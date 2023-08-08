@@ -5,12 +5,18 @@ import toast, { Toaster } from 'react-hot-toast';
 
 import { useNavigate } from "react-router-dom";
 
+import { onLoginAsync } from "../Redux/Features/User/Index";
+import { useDispatch, useSelector } from "react-redux";
+
 export default function FormLogin(props){
+  const {email} = useSelector((state) => state.users)
+
   const inputEmail = useRef()
   const inputPassword = useRef()
   const navigate = useNavigate()
-
+  const dispatch = useDispatch()
   
+    if(email) return navigate('/')
 
     return(
         <div>
@@ -36,7 +42,7 @@ export default function FormLogin(props){
             {/* <Button handleFunction={onLogin} handleClass={'px-10 py-5 hover:bg-cyan-600 font-bold'}>
               Login
             </Button> */}
-            <button onClick={() => props.handleFunctionFromPage(inputEmail, inputPassword)} className='px-10 py-5 hover:bg-cyan-600 font-bold'>
+            <button onClick={() => dispatch(onLoginAsync(inputEmail, inputPassword))} className='px-10 py-5 hover:bg-cyan-600 font-bold'>
               Login 
             </button>
           </div>
