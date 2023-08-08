@@ -13,6 +13,7 @@ import toast from 'react-hot-toast';
 
 import { useNavigate, useLocation, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
+import Counter from './Pages/Counter/Index';
 
 function App() {
   const [email, setEmail] = useState(null)
@@ -47,7 +48,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home /> } />
         <Route path='/register' element={<Register handleFunctionFromApp={onLogin} />} />
-      </Routes>
+        <Route path='/counter' element={<Counter />} />
+        </Routes>
     </>
   );
 }
