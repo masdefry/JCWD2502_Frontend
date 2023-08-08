@@ -16,6 +16,7 @@ import { useEffect, useState } from 'react';
 import Counter from './Pages/Counter/Index';
 import { onCheckIsLogin } from './Redux/Features/User/Index';
 import { useDispatch } from 'react-redux';
+import Products from './Pages/Products/Index';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path='/' element={<Home /> } />
         <Route path='/register' element={<Register />} />
         <Route path='/counter' element={<Counter />} />
+        <Route path='/products/:id/:typeId' element={<Products />} />
         </Routes>
     </>
   );

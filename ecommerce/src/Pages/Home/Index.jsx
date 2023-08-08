@@ -4,6 +4,7 @@ import Card from '../../Components/Card';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Checkbox from '../../Components/Checkbox';
+import { Link } from 'react-router-dom';
 
 export default function Home(){
     const [backupProducts, setBackupProducts] = useState(null)
@@ -121,7 +122,11 @@ export default function Home(){
                         {
                             products.map((value, index) => {
                                 return(
-                                    <Card item={value} />
+                                    <>
+                                        <Link to={`/products/${value.id}`}>
+                                            <Card item={value} />
+                                        </Link>
+                                    </>
                                 )
                             })
                         }
