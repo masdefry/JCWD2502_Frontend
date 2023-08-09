@@ -1,3 +1,4 @@
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 import axios from "axios";
 import { Carousel } from "flowbite-react";
 import { useEffect, useState } from "react";
@@ -6,7 +7,8 @@ import { useParams } from "react-router-dom";
 export default function ProductPage() {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
-    const [stockSize, setStockSize] = useState(0)
+    const [selected, setSelected] = useState({})
+    const [isDisabled, setIsDisabled] = useState(true)
 
     const onFetchData = async () => {
         try {
@@ -15,8 +17,8 @@ export default function ProductPage() {
             const totalStock = res.data.stocks.reduce((a, b) => {
                 return a + b
             })
-            console.log(totalStock)
-            setStockSize(totalStock)
+      
+            setSelected({...selected, stockSize: totalStock})
             setProduct(res.data);
         } catch (error) {}
     };
@@ -43,14 +45,14 @@ export default function ProductPage() {
                                 currency: "IDR",
                             })}
                             <span className="text-xs ml-3">
-                            {stockSize} Available
+                            {selected.stockSize} Available
                             </span>
                         </div>
-                        <div className="ff-jost-mid">Ukuran :</div>
+                        <div className="ff-jost-mid">Ukuran : {selected.size}</div>
                         <div className="flex ">
                             {product.size.map((v, index) => {
                                 return (
-                                    <span onClick={() => setStockSize(product.stocks[index])} className="ff-jost-mid flex items-center justify-center border text-center border-black w-[40px] h-[40px] rounded-full mx-[5px]">
+                                    <span onClick={() => setSelected({...selected, stockSize: product.stocks[index], size: v})} className="ff-jost-mid flex items-center justify-center border text-center border-black w-[40px] h-[40px] rounded-full mx-[5px]">
                                         {v}
                                     </span>
                                 );
@@ -65,10 +67,11 @@ export default function ProductPage() {
                                     className="border border-gray-400 h-[48px] w-[114px] ff-jost rounded-sm"
                                     type="number"
                                     min={1}
+                                    max={selected.stockSize}
                                     defaultValue={1}
                                 />
                             </div>
-                            <button className="ff-jost-bold border bg-black border-black w-[333px] h-[48px] hover:bg-white text-white hover:text-black">
+                            <button disabled={selected.size? false : true} onClick={() => alert('Success')} className="ff-jost-bold border bg-black border-black w-[333px] h-[48px] hover:bg-white text-white hover:text-black">
                                 ADD TO CART
                             </button>
                         </div>
