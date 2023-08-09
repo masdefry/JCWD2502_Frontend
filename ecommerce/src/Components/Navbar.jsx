@@ -4,6 +4,8 @@ import {BsCart2} from "react-icons/bs";
 
 export default function Navbar(props){
     const {email} = useSelector((state) => state.users)
+    const {cart} = useSelector((state) => state.cart)
+    console.log(cart)
     return(
         <div className='grid grid-cols-3 justify-between px-32 h-[50px]'>
             <div className='flex items-center'>
@@ -32,8 +34,8 @@ export default function Navbar(props){
                             {email}
                             <div className="relative">
                                 <BsCart2 className="text-xl" />
-                                <span className="text-xs bg-red-600 rounded-full w-[20px] h-[20px] absolute top-[-10px] left-[10px] flex justify-center items-center">
-                                    1
+                                <span className="text-xs text-white bg-red-600 rounded-full w-[20px] h-[20px] absolute top-[-10px] left-[10px] flex justify-center items-center">
+                                    {cart?.length}
                                 </span>
                             </div>
                         </span>

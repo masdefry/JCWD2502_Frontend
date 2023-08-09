@@ -15,6 +15,7 @@ import { useNavigate, useLocation, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import Counter from './Pages/Counter/Index';
 import { onCheckIsLogin } from './Redux/Features/User/Index';
+import { getCartAsync } from './Redux/Features/Cart/Index';
 import { useDispatch } from 'react-redux';
 import Products from './Pages/Products/Index';
 
@@ -27,6 +28,7 @@ function App() {
 
   useEffect(() => {
     dispatch(onCheckIsLogin())
+    dispatch(getCartAsync())
   }, [])
 
   return (

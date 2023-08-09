@@ -13,231 +13,512 @@
       "id": 2
     }
   ],
-
-  "products":[
+  "products": [
     {
-        "name":"Erigo T-Shirt Oversize Fresne Andora",
-        "images":["https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
-    "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"],
-        "price": 300000,
-        "size": ["S","M","L","XL"],
-        "stocks":[10,10,15,20],
-        "typeId":1,
-        "id":1
+      "name": "Erigo T-Shirt Oversize Fresne Andora",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
+        "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"
+      ],
+      "price": 300000,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stocks": [
+        10,
+        10,
+        15,
+        20
+      ],
+      "typeId": 1,
+      "id": 1
     },
     {
-        "name":"Erigo T-Shirt Basic Black White Unisex",
-        "images":["https://erigostore.co.id/cdn/shop/files/844209629fe3bdab9aea7a3f2bcd9731.jpg?v=1684515138",
-    "https://erigostore.co.id/cdn/shop/files/9d43400af60e0df2f6b481e87b489b64.jpg?v=1684515141"],
-        "price": 250000,
-        "size": ["S","M"],
-        "stocks":[10,10],
-        "typeId":1,
-        "id":2
+      "name": "Erigo T-Shirt Basic Black White Unisex",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/844209629fe3bdab9aea7a3f2bcd9731.jpg?v=1684515138",
+        "https://erigostore.co.id/cdn/shop/files/9d43400af60e0df2f6b481e87b489b64.jpg?v=1684515141"
+      ],
+      "price": 250000,
+      "size": [
+        "S",
+        "M"
+      ],
+      "stocks": [
+        10,
+        10
+      ],
+      "typeId": 1,
+      "id": 2
     },
     {
-        "name":"Erigo T-Shirt Wicked Cream",
-        "images":["https://erigostore.co.id/cdn/shop/products/T-SHIRTWICKEDCREAM.jpg?v=1677835002",
-    "https://erigostore.co.id/cdn/shop/products/id-11134201-23020-c8750tvwjunv21.jpg?v=1677835002"],
-        "price": 250000,
-        "size": ["S","M","L"],
-        "stocks":[10,10,15],
-        "typeId":1,
-        "id":3
+      "name": "Erigo T-Shirt Wicked Cream",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/T-SHIRTWICKEDCREAM.jpg?v=1677835002",
+        "https://erigostore.co.id/cdn/shop/products/id-11134201-23020-c8750tvwjunv21.jpg?v=1677835002"
+      ],
+      "price": 250000,
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "stocks": [
+        10,
+        10,
+        15
+      ],
+      "typeId": 1,
+      "id": 3
     },
     {
-        "name":"Erigo T-Shirt Oversize Glenn Fredly - Retrowave Black",
-        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qukx-li2k1an0em55f3.jpg?v=1686910993",
-    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-li2k1aqm9bi76f.jpg?v=1686910996"],
-        "price": 180000,
-        "size": ["M","L","XL"],
-        "stocks":[10,10,15],
-        "typeId":1,
-        "id":4
+      "name": "Erigo T-Shirt Oversize Glenn Fredly - Retrowave Black",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qukx-li2k1an0em55f3.jpg?v=1686910993",
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-li2k1aqm9bi76f.jpg?v=1686910996"
+      ],
+      "price": 180000,
+      "size": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "stocks": [
+        10,
+        10,
+        15
+      ],
+      "typeId": 1,
+      "id": 4
     },
     {
-        "name":"Erigo T-Shirt Museum Patah Hati Misery Loves Company Black",
-        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669",
-    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-libac7gwa3u5f8_ac616eaf-7b58-407c-8c6f-5bf11ae8fbe4.jpg?v=1687491671"],
-        "price": 125000,
-        "size": ["S","M","L","XL"],
-        "stocks":[10,10,15,20],
-        "typeId":1,
-        "id":5
+      "name": "Erigo T-Shirt Museum Patah Hati Misery Loves Company Black",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul9-libacce72npy3a.jpg?v=1687491669",
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-libac7gwa3u5f8_ac616eaf-7b58-407c-8c6f-5bf11ae8fbe4.jpg?v=1687491671"
+      ],
+      "price": 125000,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stocks": [
+        10,
+        10,
+        15,
+        20
+      ],
+      "typeId": 1,
+      "id": 5
     },
     {
-        "name":"Erigo Jogger Pants Morton Army",
-        "images":["https://erigostore.co.id/cdn/shop/files/ErigoJoggerPantsMortonArmy1.jpg?v=1683089344",
-    "https://erigostore.co.id/cdn/shop/products/222f87bdab0ae63cc7b8cc1384fe2b23.jpg?v=1683089344"],
-        "price": 450000,
-        "size": [28,30,32,34,36,38,40],
-        "stocks":[10,10,15,20,15,15,15],
-        "typeId":3,
-        "id":6
+      "name": "Erigo Jogger Pants Morton Army",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/ErigoJoggerPantsMortonArmy1.jpg?v=1683089344",
+        "https://erigostore.co.id/cdn/shop/products/222f87bdab0ae63cc7b8cc1384fe2b23.jpg?v=1683089344"
+      ],
+      "price": 450000,
+      "size": [
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
+      "stocks": [
+        10,
+        10,
+        15,
+        20,
+        15,
+        15,
+        15
+      ],
+      "typeId": 3,
+      "id": 6
     },
     {
-        "name":"Erigo Short Pants Hootf Platinum Grey",
-        "images":["https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-1.jpg?v=1662093047",
-    "https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-2.jpg?v=1662093047"],
-        "price": 400000,
-        "size": [28,30,32,34,36,38,40],
-        "stocks":[10,10,15,20,15,15,15],
-        "typeId":3,
-        "id":7
+      "name": "Erigo Short Pants Hootf Platinum Grey",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-1.jpg?v=1662093047",
+        "https://erigostore.co.id/cdn/shop/products/Short-Pants-Hootf-Platinum-Grey-2.jpg?v=1662093047"
+      ],
+      "price": 400000,
+      "size": [
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
+      "stocks": [
+        10,
+        10,
+        15,
+        20,
+        15,
+        15,
+        15
+      ],
+      "typeId": 3,
+      "id": 7
     },
     {
-        "name":"Erigo Chino Pants Alexa Navy",
-        "images":["https://erigostore.co.id/cdn/shop/products/c256b0f95833056fb8557c5deb8a8362.jpg?v=1647942335",
-    "https://erigostore.co.id/cdn/shop/products/b4360a97084ce0b12b50005703f684a8.jpg?v=1647942335"],
-        "price": 500000,
-        "size": [28,30,32,36],
-        "stocks":[10,10,15,20],
-        "typeId":3,
-        "id":8
+      "name": "Erigo Chino Pants Alexa Navy",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/c256b0f95833056fb8557c5deb8a8362.jpg?v=1647942335",
+        "https://erigostore.co.id/cdn/shop/products/b4360a97084ce0b12b50005703f684a8.jpg?v=1647942335"
+      ],
+      "price": 500000,
+      "size": [
+        28,
+        30,
+        32,
+        36
+      ],
+      "stocks": [
+        10,
+        10,
+        15,
+        20
+      ],
+      "typeId": 3,
+      "id": 8
     },
     {
-        "name":"Erigo Short Pants Noury Navy",
-        "images":["https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-1.jpg?v=1662093148",
-    "https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-6.jpg?v=1680582876"],
-        "price": 400000,
-        "size": [28,30],
-        "stocks":[10,10],
-        "typeId":3,
-        "id":9
+      "name": "Erigo Short Pants Noury Navy",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-1.jpg?v=1662093148",
+        "https://erigostore.co.id/cdn/shop/products/Short-Pants-Noury-Navy-6.jpg?v=1680582876"
+      ],
+      "price": 400000,
+      "size": [
+        28,
+        30
+      ],
+      "stocks": [
+        10,
+        10
+      ],
+      "typeId": 3,
+      "id": 9
     },
     {
-        "name":"Erigo Chino Pants Sirius Black",
-        "images":["https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-1.jpg?v=1680575486",
-    "https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-3.jpg?v=1680575486"],
-        "price": 500000,
-        "size": [30,32,36],
-        "stocks":[10,15,20],
-        "typeId":3,
-        "id":10
+      "name": "Erigo Chino Pants Sirius Black",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-1.jpg?v=1680575486",
+        "https://erigostore.co.id/cdn/shop/products/CHINO-PANTS-SIRIUS-BLACK-3.jpg?v=1680575486"
+      ],
+      "price": 500000,
+      "size": [
+        30,
+        32,
+        36
+      ],
+      "stocks": [
+        10,
+        15,
+        20
+      ],
+      "typeId": 3,
+      "id": 10
     },
     {
-        "name":"Erigo Hoodie Moku Navy",
-        "images":["https://erigostore.co.id/cdn/shop/products/HOODIE-MOKU-NAVY_1.jpg?v=1656383521",
-    "https://erigostore.co.id/cdn/shop/products/3e884ab20d24c695b0efdfc54e005059.jpg?v=1656383521"],
-        "price": 600000,
-        "size": ["S","M","L"],
-        "stocks":[10,15,20],
-        "typeId":4,
-        "id":11
+      "name": "Erigo Hoodie Moku Navy",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/HOODIE-MOKU-NAVY_1.jpg?v=1656383521",
+        "https://erigostore.co.id/cdn/shop/products/3e884ab20d24c695b0efdfc54e005059.jpg?v=1656383521"
+      ],
+      "price": 600000,
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "stocks": [
+        10,
+        15,
+        20
+      ],
+      "typeId": 4,
+      "id": 11
     },
     {
-        "name":"Erigo Pullover Arion Mahogany",
-        "images":["https://erigostore.co.id/cdn/shop/products/Pullover-Arion-Mahogany-1.jpg?v=1653877196",
-    "https://erigostore.co.id/cdn/shop/products/Pullover-Arion-Mahogany-2.jpg?v=1653877196"],
-        "price": 500000,
-        "size": ["S"],
-        "stocks":[10],
-        "typeId":4,
-        "id":12
+      "name": "Erigo Pullover Arion Mahogany",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/Pullover-Arion-Mahogany-1.jpg?v=1653877196",
+        "https://erigostore.co.id/cdn/shop/products/Pullover-Arion-Mahogany-2.jpg?v=1653877196"
+      ],
+      "price": 500000,
+      "size": [
+        "S"
+      ],
+      "stocks": [
+        10
+      ],
+      "typeId": 4,
+      "id": 12
     },
     {
-        "name":"Erigo Chore Jacket Vasyl Black",
-        "images":["https://erigostore.co.id/cdn/shop/products/Erigo-Chore-Jacket-Vasyl-Black.jpg?v=1676360338",
-    "https://erigostore.co.id/cdn/shop/products/Erigo-Chore-Jacket-Vasyl-Black-3.jpg?v=1676360339"],
-        "price": 500000,
-        "size": ["S"],
-        "stocks":[10],
-        "typeId":4,
-        "id":13
+      "name": "Erigo Chore Jacket Vasyl Black",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/Erigo-Chore-Jacket-Vasyl-Black.jpg?v=1676360338",
+        "https://erigostore.co.id/cdn/shop/products/Erigo-Chore-Jacket-Vasyl-Black-3.jpg?v=1676360339"
+      ],
+      "price": 500000,
+      "size": [
+        "S"
+      ],
+      "stocks": [
+        10
+      ],
+      "typeId": 4,
+      "id": 13
     },
     {
-        "name":"Erigo Hoodie Pastika Asphalt",
-        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qukz-lgdlltjmcjoo56_b288b9d4-907f-47a0-8f0e-550713b50c82.jpg?v=1683244196",
-    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qukw-lgdllu7rd8f06e.jpg?v=1683244188"],
-        "price": 600000,
-        "size": ["S"],
-        "stocks":[10],
-        "typeId":4,
-        "id":14
+      "name": "Erigo Hoodie Pastika Asphalt",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qukz-lgdlltjmcjoo56_b288b9d4-907f-47a0-8f0e-550713b50c82.jpg?v=1683244196",
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qukw-lgdllu7rd8f06e.jpg?v=1683244188"
+      ],
+      "price": 600000,
+      "size": [
+        "S"
+      ],
+      "stocks": [
+        10
+      ],
+      "typeId": 4,
+      "id": 14
     },
     {
-        "name":"Erigo Hoodie Landerd Darkest Spruce",
-        "images":["https://erigostore.co.id/cdn/shop/files/id-11134201-7qul3-lgdlltjccygn2c_23388aa5-08a4-49ff-bf62-2342021f8943.jpg?v=1683241661",
-    "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-lgdllu6neufnb0.jpg?v=1683241655"],
-        "price": 600000,
-        "size": ["S","M"],
-        "stocks":[10,15],
-        "typeId":4,
-        "id":15
+      "name": "Erigo Hoodie Landerd Darkest Spruce",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul3-lgdlltjccygn2c_23388aa5-08a4-49ff-bf62-2342021f8943.jpg?v=1683241661",
+        "https://erigostore.co.id/cdn/shop/files/id-11134201-7qul0-lgdllu6neufnb0.jpg?v=1683241655"
+      ],
+      "price": 600000,
+      "size": [
+        "S",
+        "M"
+      ],
+      "stocks": [
+        10,
+        15
+      ],
+      "typeId": 4,
+      "id": 15
     },
     {
-        "name":"Erigo Totebag Two Tone Aloha Beige",
-        "images":["https://erigostore.co.id/cdn/shop/products/TOTEBAG-TWO-TONE-ALOHA-ERIGO-BEIGE-2.jpg?v=1661150434",
-    "https://erigostore.co.id/cdn/shop/products/d5e3866cb2f6efe1a94ca825ace12835.jpg?v=1661150434"],
-        "price": 250000,
-        "size": ["M"],
-        "stocks":[15],
-        "typeId":5,
-        "id":16
+      "name": "Erigo Totebag Two Tone Aloha Beige",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/TOTEBAG-TWO-TONE-ALOHA-ERIGO-BEIGE-2.jpg?v=1661150434",
+        "https://erigostore.co.id/cdn/shop/products/d5e3866cb2f6efe1a94ca825ace12835.jpg?v=1661150434"
+      ],
+      "price": 250000,
+      "size": [
+        "M"
+      ],
+      "stocks": [
+        15
+      ],
+      "typeId": 5,
+      "id": 16
     },
     {
-        "name":"Erigo Totebag Versace Black",
-        "images":["https://erigostore.co.id/cdn/shop/products/bd9718168abd51e0e33b5574af96607c_f0c1db6f-9e31-4e5b-a56f-1ddee8cf58c7.jpg?v=1659514506",
-    "https://erigostore.co.id/cdn/shop/products/Totebag-Vercase-Black-3.jpg?v=1661150268"],
-        "price": 250000,
-        "size": ["M"],
-        "stocks":[15],
-        "typeId":5,
-        "id":17
+      "name": "Erigo Totebag Versace Black",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/bd9718168abd51e0e33b5574af96607c_f0c1db6f-9e31-4e5b-a56f-1ddee8cf58c7.jpg?v=1659514506",
+        "https://erigostore.co.id/cdn/shop/products/Totebag-Vercase-Black-3.jpg?v=1661150268"
+      ],
+      "price": 250000,
+      "size": [
+        "M"
+      ],
+      "stocks": [
+        15
+      ],
+      "typeId": 5,
+      "id": 17
     },
     {
-        "name":"Erigo Totebag The Club Black",
-        "images":["https://erigostore.co.id/cdn/shop/products/3c64e03b6ca9b8c63524c5b35a086dab.jpg?v=1661150127",
-    "https://erigostore.co.id/cdn/shop/products/TOTEBAG-BASIC-ERIGO-THE-CLUB-BLACK-3.jpg?v=1661150127"],
-        "price": 250000,
-        "size": ["M"],
-        "stocks":[15],
-        "typeId":5,
-        "id":18
+      "name": "Erigo Totebag The Club Black",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/3c64e03b6ca9b8c63524c5b35a086dab.jpg?v=1661150127",
+        "https://erigostore.co.id/cdn/shop/products/TOTEBAG-BASIC-ERIGO-THE-CLUB-BLACK-3.jpg?v=1661150127"
+      ],
+      "price": 250000,
+      "size": [
+        "M"
+      ],
+      "stocks": [
+        15
+      ],
+      "typeId": 5,
+      "id": 18
     },
     {
-        "name":"Erigo Totebag Two Tone Aloha Green",
-        "images":["https://erigostore.co.id/cdn/shop/products/b6e32b754fe65eca811f222d65d96bd9.jpg?v=1661150604",
-    "https://erigostore.co.id/cdn/shop/products/TOTEBAG-TWO-TONE-ALOHA-ERIGO-GREEN-3.jpg?v=1661150533"],
-        "price": 250000,
-        "size": ["M"],
-        "stocks":[15],
-        "typeId":5,
-        "id":19
+      "name": "Erigo Totebag Two Tone Aloha Green",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/b6e32b754fe65eca811f222d65d96bd9.jpg?v=1661150604",
+        "https://erigostore.co.id/cdn/shop/products/TOTEBAG-TWO-TONE-ALOHA-ERIGO-GREEN-3.jpg?v=1661150533"
+      ],
+      "price": 250000,
+      "size": [
+        "M"
+      ],
+      "stocks": [
+        15
+      ],
+      "typeId": 5,
+      "id": 19
     },
     {
-        "name":"Erigo Totebag Two Tone Aloha Maroon",
-        "images":["https://erigostore.co.id/cdn/shop/products/b50cef4f9e0898500a828cc009b24d70.jpg?v=1661150735",
-    "https://erigostore.co.id/cdn/shop/products/TOTEBAG-TWO-TONE-ALOHA-ERIGO-MAROON-3.jpg?v=1661150708"],
-        "price": 250000,
-        "size": ["M"],
-        "stocks":[15],
-        "typeId":5,
-        "id":20
+      "name": "Erigo Totebag Two Tone Aloha Maroon",
+      "images": [
+        "https://erigostore.co.id/cdn/shop/products/b50cef4f9e0898500a828cc009b24d70.jpg?v=1661150735",
+        "https://erigostore.co.id/cdn/shop/products/TOTEBAG-TWO-TONE-ALOHA-ERIGO-MAROON-3.jpg?v=1661150708"
+      ],
+      "price": 250000,
+      "size": [
+        "M"
+      ],
+      "stocks": [
+        15
+      ],
+      "typeId": 5,
+      "id": 20
     }
-    
-],
-
-"type":[
+  ],
+  "type": [
     {
-        "name":"T-shirt",
-        "id":1
+      "name": "T-shirt",
+      "id": 1
     },
     {
-        "name":"Shirt",
-        "id":2
+      "name": "Shirt",
+      "id": 2
     },
     {
-        "name":"Pants",
-        "id":3
+      "name": "Pants",
+      "id": 3
     },
     {
-        "name":"Outerwear",
-        "id":4
+      "name": "Outerwear",
+      "id": 4
     },
     {
-        "name":"Accessories",
-        "id":5
+      "name": "Accessories",
+      "id": 5
     }
-]
+  ],
+  "carts": [
+    {
+      "productId": "1",
+      "userId": "1",
+      "quantity": "1",
+      "size": "S",
+      "id": 1
+    },
+    {
+      "productId": 1,
+      "userId": "1",
+      "quantity": "1",
+      "size": "S",
+      "id": 2
+    },
+    {
+      "productId": 1,
+      "userId": 1,
+      "quantity": "1",
+      "size": "S",
+      "id": 3
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "S",
+      "id": 4
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "S",
+      "id": 5
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "S",
+      "id": 6
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "S",
+      "id": 7
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "M",
+      "id": 8
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "M",
+      "id": 9
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "quantity": 1,
+      "size": "M",
+      "id": 10
+    },
+    {
+      "productId": 1,
+      "userId": 1,
+      "quantity": 1,
+      "size": "S",
+      "id": 11
+    },
+    {
+      "productId": 1,
+      "userId": 1,
+      "quantity": 1,
+      "size": "M",
+      "id": 12
+    },
+    {
+      "productId": 1,
+      "userId": 1,
+      "quantity": 1,
+      "size": "M",
+      "id": 13
+    },
+    {
+      "productId": 1,
+      "userId": 1,
+      "quantity": 1,
+      "size": "S",
+      "id": 14
+    }
+  ]
 }

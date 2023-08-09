@@ -1,14 +1,17 @@
 import { isDisabled } from "@testing-library/user-event/dist/utils";
 import axios from "axios";
 import { Carousel } from "flowbite-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
+import { addToCartAsync } from "../../Redux/Features/Cart/Index";
+import { useDispatch } from "react-redux";
 
 export default function ProductPage() {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
     const [selected, setSelected] = useState({})
-    const [isDisabled, setIsDisabled] = useState(true)
+    const qty = useRef()
+    const dispatch = useDispatch()
 
     const onFetchData = async () => {
         try {
@@ -69,9 +72,10 @@ export default function ProductPage() {
                                     min={1}
                                     max={selected.stockSize}
                                     defaultValue={1}
+                                    ref={qty}
                                 />
                             </div>
-                            <button disabled={selected.size? false : true} onClick={() => alert('Success')} className="ff-jost-bold border bg-black border-black w-[333px] h-[48px] hover:bg-white text-white hover:text-black">
+                            <button disabled={selected.size? false : true} onClick={() => dispatch(addToCartAsync({productId: Number(id), userId: Number(localStorage.getItem('idLogin')), quantity: Number(qty.current.value), size: selected.size }))} className="ff-jost-bold border bg-black border-black w-[333px] h-[48px] hover:bg-white text-white hover:text-black">
                                 ADD TO CART
                             </button>
                         </div>
