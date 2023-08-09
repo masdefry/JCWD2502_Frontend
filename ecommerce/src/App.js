@@ -41,7 +41,7 @@ function App() {
         <Route path='/' element={<Home /> } />
         <Route path='/register' element={<Register />} />
         <Route path='/counter' element={<Counter />} />
-        <Route path='/products/:id/:typeId' element={<Products />} />
+        <Route path='/products/:id' element={<Products />} />
         </Routes>
     </>
   );
