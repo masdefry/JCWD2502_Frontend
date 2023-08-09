@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import {BsCart2} from "react-icons/bs";
 
 export default function Navbar(props){
     const {email} = useSelector((state) => state.users)
@@ -27,7 +28,15 @@ export default function Navbar(props){
             <div className='flex justify-end items-center font-bold'>
                 {
                     email?
-                        `${email}`
+                        <span className="flex items-center gap-3">
+                            {email}
+                            <div className="relative">
+                                <BsCart2 className="text-xl" />
+                                <span className="text-xs bg-red-600 rounded-full w-[20px] h-[20px] absolute top-[-10px] left-[10px] flex justify-center items-center">
+                                    1
+                                </span>
+                            </div>
+                        </span>
                     :
                             <Link to='/register'>
                             Signin

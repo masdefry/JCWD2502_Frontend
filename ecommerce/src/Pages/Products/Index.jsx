@@ -6,11 +6,17 @@ import { useParams } from "react-router-dom";
 export default function ProductPage() {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
+    const [stockSize, setStockSize] = useState(0)
 
     const onFetchData = async () => {
         try {
             const res = await axios.get(`http://localhost:5000/products/${id}`);
             console.log(res);
+            const totalStock = res.data.stocks.reduce((a, b) => {
+                return a + b
+            })
+            console.log(totalStock)
+            setStockSize(totalStock)
             setProduct(res.data);
         } catch (error) {}
     };
@@ -36,12 +42,15 @@ export default function ProductPage() {
                                 style: "currency",
                                 currency: "IDR",
                             })}
+                            <span className="text-xs ml-3">
+                            {stockSize} Available
+                            </span>
                         </div>
                         <div className="ff-jost-mid">Ukuran :</div>
                         <div className="flex ">
-                            {product.size.map((v) => {
+                            {product.size.map((v, index) => {
                                 return (
-                                    <span className="ff-jost-mid flex items-center justify-center border text-center border-black w-[40px] h-[40px] rounded-full mx-[5px]">
+                                    <span onClick={() => setStockSize(product.stocks[index])} className="ff-jost-mid flex items-center justify-center border text-center border-black w-[40px] h-[40px] rounded-full mx-[5px]">
                                         {v}
                                     </span>
                                 );
