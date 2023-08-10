@@ -8,6 +8,16 @@ import { useNavigate } from "react-router-dom";
 import { onLoginAsync } from "../Redux/Features/User/Index";
 import { useDispatch, useSelector } from "react-redux";
 
+// Import Firebase
+import {auth} from './../firebase.js';
+import {
+  GoogleAuthProvider, 
+  signInWithPopup,
+  onAuthStateChanged, 
+signOut} from 'firebase/auth';
+
+  const provider = new GoogleAuthProvider();
+
 export default function FormLogin(props){
   const {email} = useSelector((state) => state.users)
 
@@ -15,6 +25,15 @@ export default function FormLogin(props){
   const inputPassword = useRef()
   const navigate = useNavigate()
   const dispatch = useDispatch()
+
+  const onLoginWithGoogle = async() => {
+    try {
+      const response = await signInWithPopup(auth, provider)
+      console.log(response)
+    } catch (error) {
+      console.log(error)
+    }
+  }
   
     if(email) return navigate('/')
 
@@ -44,6 +63,10 @@ export default function FormLogin(props){
             </Button> */}
             <button onClick={() => dispatch(onLoginAsync(inputEmail, inputPassword))} className='px-10 py-5 hover:bg-cyan-600 font-bold'>
               Login 
+            </button>
+
+            <button onClick={onLoginWithGoogle} className='bg-red-600 px-10 py-5 hover:bg-cyan-600 font-bold'>
+              Login with Google
             </button>
           </div>
         </div>

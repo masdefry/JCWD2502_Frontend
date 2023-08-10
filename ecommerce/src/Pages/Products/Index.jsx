@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 
 export default function ProductPage() {
     const [product, setProduct] = useState(null);
-    const { id } = useParams();
+    const {id} = useParams();  
     const [selected, setSelected] = useState({})
     const qty = useRef()
     const dispatch = useDispatch()
