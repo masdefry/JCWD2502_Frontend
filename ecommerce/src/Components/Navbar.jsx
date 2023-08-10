@@ -1,11 +1,20 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {BsCart2} from "react-icons/bs";
+import { useDispatch } from "react-redux";
+
+import { setTest } from "../Redux/Features/User/Index";
 
 export default function Navbar(props){
+    const dispatch = useDispatch()
     const {email} = useSelector((state) => state.users)
     const {cart} = useSelector((state) => state.cart)
-    console.log(cart)
+    
+    const onLogout = () => {
+        localStorage.removeItem('idLogin')
+        dispatch(setTest(''))
+    }
+
     return(
         <div className='grid grid-cols-3 justify-between px-32 h-[50px]'>
             <div className='flex items-center'>
@@ -38,6 +47,9 @@ export default function Navbar(props){
                                     {cart?.length}
                                 </span>
                             </div>
+                            <button onClick={onLogout} className="ml-5 border px-3 py-1">
+                                Logout 
+                            </button>
                         </span>
                     :
                             <Link to='/register'>

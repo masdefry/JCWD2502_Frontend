@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import { onLoginAsync } from "../Redux/Features/User/Index";
 import { useDispatch, useSelector } from "react-redux";
 
+import { setTest } from "../Redux/Features/User/Index";
+
 // Import Firebase
 import {auth} from './../firebase.js';
 import {
@@ -26,10 +28,34 @@ export default function FormLogin(props){
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
+  const onGetUser = async(_email) => {
+    try {
+      return await axios.get(`http://localhost:5000/users?email=${_email}`)
+    } catch (error) {
+      
+    }
+  }
+
   const onLoginWithGoogle = async() => {
     try {
       const response = await signInWithPopup(auth, provider)
-      console.log(response)
+      
+      // Komen dibawah ini disuruh Aryo ya. Parah gasiii?
+      // Yaiyalah di ketikin!
+      // Cek email google nya udah ter-register atau belum
+      const checkUser = await onGetUser(response.user.email)
+      console.log(checkUser)
+      // Kalo belum ter-register, lakukan post data nya
+      if(!checkUser.data.length){
+        await axios.post('http://localhost:5000/users', {email: response.user.email, fullname: response.user.displayName, password: '', isGoogle: true})
+      }
+
+      // Dispatch email ke global store, supaya bisa diakses di navbar
+      dispatch(setTest(response.user.email))
+
+      // Set local storage untuk login session nya
+      const getId = await onGetUser(response.user.email)
+      localStorage.setItem('idLogin', getId.data[0].id)
     } catch (error) {
       console.log(error)
     }

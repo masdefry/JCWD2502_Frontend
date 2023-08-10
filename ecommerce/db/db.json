@@ -4,13 +4,22 @@
       "fullname": "M Defryan",
       "email": "defryan@gmail.com",
       "password": "Abc12345",
+      "isGoogle": false,
       "id": 1
     },
     {
       "fullname": "Ryan",
       "email": "ryan01@gmail.com",
       "password": "Bca12",
+      "isGoogle": false,
       "id": 2
+    },
+    {
+      "email": "masdefry20@gmail.com",
+      "fullname": "M Defryan Tridya Isfandy",
+      "password": "",
+      "isGoogle": true,
+      "id": 3
     }
   ],
   "products": [
